@@ -1,3 +1,9 @@
+onload = () => {
+   const c = setTimeout(() => {
+     document.body.classList.remove("not-loaded");
+     clearTimeout(c);
+   }, 1000);
+ };
 const inputBox = document.getElementById("input-box");
 const listContainer = document.getElementById("list-container");
 function AddTask(){
